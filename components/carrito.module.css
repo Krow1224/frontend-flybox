@@ -1,0 +1,169 @@
+.carritoContainer {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+    color: #00bfff;
+    border-bottom: 2px solid #00bfff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.productItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.productName {
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+.itemDetails {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.summarySection {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #000;
+}
+
+.summaryRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.totalAmount {
+    color: #008000; 
+    font-size: 1.5rem;
+}
+
+.checkoutButton {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkoutButton:hover {
+    background-color: #e0a800;
+}
+
+.checkoutButton {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black; 
+    background-color: #ffc107; 
+    border: 3px solid #ff9800; 
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 40px;
+    transition: background-color 0.3s, transform 0.1s, opacity 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkoutButton:hover:not(:disabled) {
+    background-color: #ffb74d; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.checkoutButton:disabled {
+    background-color: #ccc !important;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 0.6;
+    border-color: #aaa;
+}
+
+
+/* Estilos para la Pantalla de Felicitaciones */
+.successContainer {
+    text-align: center;
+    padding: 100px 20px; 
+    background-color: #e6ffe6; 
+    border: 3px solid #009900; 
+    border-radius: 15px; 
+    margin: 50px auto; 
+    max-width: 700px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.successTitle {
+    color: #009900;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.successMessage {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.successButton {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.successButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+
+/*para la animación de felictaciones*/
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividad básica */
+@media (max-width: 650px) {
+    .carritoContainer {
+        margin: 20px;
+        padding: 15px;
+    }
+    .productItem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .itemDetails {
+        margin-top: 5px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .successTitle {
+        font-size: 2em;
+    }
+}

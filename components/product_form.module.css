@@ -1,0 +1,96 @@
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* Estilos para el encabezado */
+.title {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Estilos para el formulario y espaciado */
+.form {
+    display: grid;
+    gap: 20px;
+}
+
+/* Estilos para las etiquetas de los campos */
+.label {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Estilos para los campos de entrada y área de texto */
+.input, .textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Asegura que padding no afecte el width total */
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: 1em;
+}
+
+.input:focus, .textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+    outline: none;
+}
+
+/* Estilos para mensajes de estado */
+.error {
+    background-color: #fcebeb;
+    color: #cc0000;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #cc0000;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.success {
+    background-color: #e6ffe6;
+    color: #008000;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #008000;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Estilos para el botón de envío */
+.submitButton {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton:hover:not(:disabled) {
+    background-color: #45a049;
+    transform: translateY(-1px);
+}
+
+.submitButton:disabled {
+    background-color: #90a4ae;
+    cursor: not-allowed;
+    box-shadow: none;
+}

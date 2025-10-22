@@ -1,0 +1,66 @@
+/* app/catalog.module.css */
+
+.mainContainer {
+    padding: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.productGrid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 25px; 
+    margin-top: 30px; 
+}
+
+/* Estilos para la tarjeta de producto */
+.productCard {
+    border: 1px solid #ddd; 
+    padding: 18px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.productName {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.productPrice {
+    font-weight: bold;
+    color: #008000; 
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.addButton {
+    background-color: #ffc107;
+    border: none; 
+    padding: 10px 18px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.addButton:hover {
+    background-color: #e0a800;
+}
