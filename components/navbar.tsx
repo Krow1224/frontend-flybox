@@ -12,6 +12,10 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.navLinks}>
+
+        {/*flybox image*/}
+        
+
         {/* Enlace Home */}
         <Link href="/" className={styles.link}>
           🏠Home
